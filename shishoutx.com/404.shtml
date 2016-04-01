@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>迷路啦~~~！——落单的草泥马</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (min-width: 720px) and (max-width:1080px)">
+	<!-- 宽度 大于720px 并 小于1080px 的页面窗口 -->
+
+</head>
+
+<body>
+
+<header id="top">
+	<h1>落单的草泥马</h1>
+</header>
+
+<nav id="nav">
+	<ul>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="article/sublime-text.html">文章</a></li>
+		<li><a href="">教程</a></li>
+		<li><a href="">历史</a></li>
+		<li><a href="">联系</a></li>
+		<li><a href="">关于</a></li>
+		<li><a class="on" title="看起来是蓝色装备，只要你鼠标放上来就变成橙色装备了呢！" href="">隐藏的、传说的404</a></li>
+	</ul>
+</nav>
+
+	<article>
+		<header>
+			<h1>404</h1>
+		</header>
+		<p>
+			“玩家，你已经碰到空气墙……”呸呸呸，说错。<br>
+			“凡人，你已经触碰禁忌的存在！速速退去!(快回去首页！)”
+		</p>
+		<div>
+			你来自<code><!--#echo var="REMOTE_ADDR" --></code><br>
+			你用的浏览器是<code><!--#echo var="HTTP_USER_AGENT" --></code><br>
+			想要到<code><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></code><br>
+			可惜报了<code><!--#echo var="REDIRECT_STATUS" --></code>错误！
+		</div>
+	</article>
+
+	<style type="text/css">
+	.on{
+		width: 10em;
+		background-color: #007CFF;
+	}
+	article p {
+		font-size: 3em;
+		text-align: center;
+	}
+	article header h1{
+		font-size: 25em;
+		margin: 0;
+		text-align: center;
+	}
+	</style>
+</body>
+</html>

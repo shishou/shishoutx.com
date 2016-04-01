@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>Sublime Text 知识整理——落单的草泥马</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (min-width: 720px) and (max-width:1080px)">
+	<!-- 宽度 大于720px 并 小于1080px 的页面窗口 -->
+</head>
+<body>
+
+	<header id="top">
+		<h1>Sublime Text 知识整理</h1>
+	</header>
+
+
+	<nav id="nav">
+		<ul>
+			<li><a href="../index.html">首页</a></li>
+			<li><a class="on" href="sublime-text.html">文章</a></li>
+			<li><a href="">教程</a></li>
+			<li><a href="">历史</a></li>
+			<li><a href="">联系</a></li>
+			<li><a href="">关于</a></li>
+		</ul>
+	</nav>
+
+	<section id="blog">
+
+		<article>
+			<header>
+				<h1>Sublime Text</h1>
+				<time datetime="2016-03-16 21:29">2016-03-16 21:29</time>
+			</header>
+			<p>
+				Sublime Text 官网：<a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a>
+			</p>
+			<p>
+				PS：个人用的设置<br>
+				用户自定义设置：Preferences-->Settings - User
+					<pre>
+		"font_size": 14,
+		//默认字体大小
+
+		"font_face": "Inconsolata 微软雅黑",
+		//指定字体
+
+		"line_padding_top": 1,
+		//在行顶部填充间距 数字大小就是行间距
+
+		"line_padding_bottom": 1,
+		//在行底部填充间距 数字大小就是行间距
+
+		“margin”: 4,
+		// 行号边栏和文字的间距
+
+		"highlight_line": true,
+		//高亮当前编辑行
+
+		"rulers": [80,100],
+		//添加行宽标尺
+
+		"translate_tabs_to_spaces": true,
+		"tab_size": 2,
+		//把Tab对齐转化为空格对齐
+		//tab_size 控制转化比例。
+
+		"auto_find_in_selection": true,
+		//开启选中范围内搜索（Search in selection）
+
+		"save_on_focus_lost": true,
+		//焦点丢失后自动保存
+
+		"word_wrap": false,
+		//自动换行
+
+		"draw_white_space": "all",
+		//显示Tab、空格
+
+		"show_encoding": true,
+		//右下角显示当前文件的编码
+
+		"trim_trailing_white_space_on_save": true,
+		//保存时自动去除行末无用空格
+
+		"ensure_newline_at_eof_on_save": true,
+		//保存时自动增加文件末尾换行 (Git 用户常用)
+
+		"bold_folder_labels": true,
+		//侧栏文件树文件夹加粗显示。
+
+		"show_full_path": true
+		//标题栏显示文件全路径
+					</pre>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Package Control 插件管理</h1>
+				<time datetime="2016-03-16 21:32">2016-03-16 21:32</time>
+			</header>
+			<p>
+				Package Control 官网<a href="https://packagecontrol.io/installation"> https://packagecontrol.io</a> <br>
+				PS:Sublime Text 主题<a href="https://packagecontrol.io/browse/labels/theme"> https://packagecontrol.io/browse/labels/theme</a><br>
+				根据你对应的Sublime Text版本来复制代码，按 <kbd>Ctrl</kbd>+<kbd>`</kbd> 粘贴、回车。<br>
+				安装完成后按<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd><br>
+				键入首字母<code>pc</code>后可以就看到 Package Control 工具<br>
+				也可以点击菜单中的<code>Preference-->Package Control</code><br>
+			</p>
+			<p>
+
+			</p>
+		</article>
+
+
+		<article>
+			<header>
+				<h1>Emmet 快速生成HTML、CSS</h1>
+				<time datetime="2016-03-16 21:59">2016-03-16 21:59</time>
+			</header>
+			<p>
+				Emmet DOM：<a href="http://docs.emmet.io/">http://docs.emmet.io/</a><br>
+				使用Package Control来安装，<br>
+				<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></br>键入
+				<br><code>emmet</code><br> 第一个就是,直接回车，安装完成会跳一个说明窗口。
+			</p>
+			<p>
+				如果你直接使用，会提示你要PyV8,PyV8安装方法如下：<br>
+				在安装Emmet后按 <br>
+				<kbd>Ctrl</kbd>+<kbd>`</kbd><br>
+				你会看到一个类似
+				<code>"https://raw.github.com/emmetio/pyv8-binaries/master/pyv8-win64-p3.zip"</code>的链接在里面。<br>
+				复制链接下载，把解压的文件复制到<br>
+				<code>"%USERPROFILE%\AppData\Roaming\Sublime Text 3\Installed Packages\PyV8"</code><br>
+				（%USERPROFILE% 相当于你的 C:\Users\"当前用户名"）<br>
+				如果没有这个目录的话就新建一个。<br>
+				<kbd>Win</kbd>+<kbd>R</kbd> 打开cmd，复制粘贴以下命令回车<br>
+				<code>md "%USERPROFILE%\AppData\Roaming\Sublime Text 3\Installed Packages\PyV8"</code><br>
+				最终就是这样一个目录<br>
+				<code>%USERPROFILE%\AppData\Roaming\Sublime Text 3\Installed Packages\PyV8\pyv8-win64-p3\几个py结尾的文件</code>
+			</p>
+			<p>
+				主要用法可以看这里：<a href="http://www.iteye.com/news/27580">Emmet：HTML/CSS代码快速编写神器</a>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Snippets 类型插件(代码补全)</h1>
+				<time datetime="2016-03-17 00:21">2016-03-17 00:21</time>
+			</header>
+			<p>
+				<h3>Java​Script & Node​JS Snippets </h3><br>
+				很不错的一个Java​Script 代码补全插件，主要用法在
+				Package Control上有介绍的<a href="https://packagecontrol.io/packages/JavaScript%20%26%20NodeJS%20Snippets">传送门</a>
+			</p>
+			<p>
+				<h3>Insert Callback</h3>
+				Node.js写回调函数老是有个<code>;</code>要删除?<br>
+				使用Insert Callback插件只需要直接<kbd>Alt</kbd>+<kbd>C</kbd>就可以直接生成，而且没有那个烦人的<code>;</code>！<br>
+				Package Control <a href="https://packagecontrol.io/packages/Insert%20Callback">传送门</a>
+			</p>
+			<p>
+				<h3>j​Query</h3>
+				快速开发j​Query必备，名字简单粗暴。<br>
+				Package Control <a href="https://packagecontrol.io/packages/jQuery">传送门</a>
+			</p>
+
+		</article>
+
+		<article>
+			<header>
+				<h1>AdvancedNewFile</h1>
+				<time datetime="2016-03-17 13:35">2016-03-17 13:35</time>
+			</header>
+			<p>
+				能让你在新建文件的时候用<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> 来直接指定新文件的路径。而避免了每次指定文件位置需要鼠标来操作。<br>
+				Package Control <a href="https://packagecontrol.io/packages/AdvancedNewFile">传送门</a><br>
+				类似软件：<a href="https://packagecontrol.io/packages/FileBrowser">FileBrowser</a>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Http Requester</h1>
+				<time datetime="2016-03-17 13:41">2016-03-17 13:41</time>
+			</header>
+			<p>
+				简单省力的服务器响应测试工具，用法请看<br>
+				Package Control <a href="https://packagecontrol.io/packages/Http%20Requester">传送门</a>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Nettuts+ Fetch</h1>
+				<time datetime="2016-03-17 14:02">2016-03-17 14:02</time>
+			</header>
+			<p>
+				类库文件下载<br>
+				Package Control <a href="https://packagecontrol.io/packages/Nettuts%2B%20Fetch">传送门</a>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>DocBlockr</h1>
+				<time datetime="2016-03-17 14:12">2016-03-17 14:12</time>
+			</header>
+			<p>
+				用于快速注释，只需要在函数体上方<code>/**</code>然后<code>Tab</code>,就快速生成函数体对应的注释模板。<br>
+				Package Control <a href="https://packagecontrol.io/packages/DocBlockr">传送门</a>
+			</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Summit​Linter</h1>
+				<time></time>
+			</header>
+			<p>
+				语法和编码风格校验工具，Summit​Linter是一整套的系统，安装完成之后还需要安装对应的语言支持。<br>
+				Package Control <a href="https://packagecontrol.io/packages/SummitLinter">传送门</a>
+			</p>
+		</article>
+
+
+		<article>
+			<header>
+				<h1>CSS Format</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					可以将任意的 CSS、SASS、SCSS、LESS 代码格式化特定格式<br>
+					用法: <br>
+					打开 CSS 文件后，可以通过以下任一方法执行格式化命令：
+					<ul>
+						<li>右键菜单：CSS Format ></li>
+						<li>编辑菜单：Edit > CSS Format ></li>
+						<li>命令面板：使用快捷键 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>(Windows/Linux) 、<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>(OS X) 打开命令面板，输入 <code>Format CSS</code>，选择对应格式的菜单回车即可</li>
+					</ul>
+					个人推荐<code>Expanded (Break Selectors) </code> 模式 <br>
+
+					<a href="http://mutian.wang/tech/1508">作者传送门？</a>
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>ColorPicker</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					方便的调色盘插件，在16进制颜色代码上打开就可以看到当前的颜色选择，<br>
+					快捷键：<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>AutoFileName </h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					文件路径自动提示——在你键入有关文件名的时候，会自动补全文件(目录)名
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>ColorHighlighter </h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					平时以下划线来显示16进制代码的颜色，光标移到后会在背景显示16进制颜色
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Tag</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					格式化你的HTML代码。<br>
+					快捷键：<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>CSScomb</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					可以让你的CSS属性按规则来排序，不过你要装<a href="https://nodejs.org/en/" title="推荐装LTS版" >Node.js</a><br>
+					快捷键：<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> <br>
+					(和上面的ColorPicker的默认快捷键冲突，我改成了<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd>)
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>IMESupport</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					一款日本人开发的插件，能让你的中文输入法文字候选框能正常跟随光标<br>
+					好像只有在Windows下才有用，Linux不可以用这个方法。
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>All Autocomplete</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					全局代码匹配<br>
+					Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Bracket Highlighter</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					用于高亮匹配括号，引号和html标签。
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>ChineseLocalization</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					还在到处找汉化版本吗？安装这个就可以了，有简、繁、日、英可以选择。
+				</p>
+		</article>
+
+		<article>
+			<header>
+				<h1>Themr</h1>
+				<time datetime="2016-03-24 16:26">2016-03-24 16:26</time>
+			</header>
+				<p>
+					Sublime Text 可以下载很多主题样式，用这个插件可以管理所有的主题
+				</p>
+		</article>
+
+	</section>
+
+
+	<footer>
+		<div>
+			<small>这里页脚……好无聊</small>
+		</div>
+	</footer>
+</body>
+</html>
+
